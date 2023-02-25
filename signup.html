@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <h1 class="text-white ml-5">Teacher Portal</h1>
+    <a class="nav text-right text-white" href="./signup.html">Signup</a>
+    <a class="nav1 text-white" href="./login.html">Login</a>
+  </nav>
+  <div class="m-4">
+    <h1>Teacher Signup</h1>
+    <form class="row g-3 mt-4 registration-form" id="registration-form">
+        <div class="col-md-12">
+            <input type="text" class="form-control" id="first-name" placeholder="Enter Name" required autocomplete="off" onkeyup="validate()">
+            <div class="valid-feedback" id="first-name-valid">
+                Looks good!
+            </div>
+            <div class="invalid-feedback" id="first-name-invalid">
+                Please enter a valid first name
+            </div>
+        </div>
+       
+        <div class="col-md-12">
+            <div class="input-group has-validation">
+                <input type="text" class="form-control" id="email" placeholder="Enter Email" aria-describedby="inputGroupPrepend" required
+                    autocomplete="off" onkeyup="validate()">
+                <div class="valid-feedback" id="email-valid">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback" id="email-invalid">
+                    Please enter a valid email.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="input-group has-validation">
+                <input type="password" class="form-control" id="password" onkeyup="validate()"
+                    aria-describedby="inputGroupPrepend" placeholder="Enter Password" required autocomplete="off">
+                <div class="valid-feedback" id="password-valid">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback" id="password-invalid">
+                    Please enter a valid Password.
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="input-group has-validation">
+              <input type="password" class="form-control" id="conpassword" placeholder="Enter Confirm Password" onkeyup="validate()"
+                  aria-describedby="inputGroupPrepend" required autocomplete="off">
+              <div class="valid-feedback" id="conpassword-valid">
+                  Looks good!
+              </div>
+              <div class="invalid-feedback" id="conpassword-invalid">
+                  Please enter a valid Password.
+              </div>
+          </div>
+      </div>
+
+
+       
+
+       
+        <div class="col-12" >
+            <button class="btn btn-dark" type="button" onclick="validate(true)">Signup</button>
+        </div>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

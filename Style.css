@@ -1,0 +1,37 @@
+.nav{
+    position: absolute;
+    width: 105px;
+    height: 39px;
+    left: 1440px;
+    top: 18px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.nav1{
+
+    position: absolute;
+    width: 83px;
+    height: 39px;
+    left: 1590px;
+    top: 18px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+}
